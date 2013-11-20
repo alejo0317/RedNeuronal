@@ -1,0 +1,100 @@
+\hypertarget{classGrafo}{\section{Grafo Class Reference}
+\label{classGrafo}\index{Grafo@{Grafo}}
+}
+
+
+{\ttfamily \#include $<$Grafo.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGrafo_a1876ac5c509e53a40eccbeaeaa65666e}{Grafo} (\hyperlink{classDatosGrafo}{Datos\-Grafo} datos)
+\item 
+void \hyperlink{classGrafo_af35326ac9f80c6ca763a1c3b0ef15b60}{alimentar} (const vector$<$ double $>$ \&valores\-Entrada)
+\item 
+unsigned \hyperlink{classGrafo_af2bc519db98b68230c525db3331c1c66}{entrenar} (vector$<$ double $>$ entradas, const vector$<$ double $>$ \&valores\-Esperados)
+\item 
+void \hyperlink{classGrafo_a158dbc3b6695be5e34f5e82ad7670632}{obtener\-Resultados} (vector$<$ double $>$ \&valores\-Resultado) const 
+\item 
+vector$<$ double $>$ \hyperlink{classGrafo_a985b9195224b1d3d9132d55c5db08cb9}{get\-Resultados} ()
+\item 
+\hyperlink{classGrafo_ab810bbe26a98e9af6661ccddff66b03b}{Grafo} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase grafo que define toda la estructura de la R\-E\-D. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGrafo_a1876ac5c509e53a40eccbeaeaa65666e}{\index{Grafo@{Grafo}!Grafo@{Grafo}}
+\index{Grafo@{Grafo}!Grafo@{Grafo}}
+\subsubsection[{Grafo}]{\setlength{\rightskip}{0pt plus 5cm}Grafo\-::\-Grafo (
+\begin{DoxyParamCaption}
+\item[{{\bf Datos\-Grafo}}]{datos}
+\end{DoxyParamCaption}
+)}}\label{classGrafo_a1876ac5c509e53a40eccbeaeaa65666e}
+El constructor de la clase \hyperlink{classGrafo}{Grafo} recibe como parámetros un objeto de tipo \hyperlink{classDatosGrafo}{Datos\-Grafo} que contiene la información necesaria para crear el grafo \hypertarget{classGrafo_ab810bbe26a98e9af6661ccddff66b03b}{\index{Grafo@{Grafo}!Grafo@{Grafo}}
+\index{Grafo@{Grafo}!Grafo@{Grafo}}
+\subsubsection[{Grafo}]{\setlength{\rightskip}{0pt plus 5cm}Grafo\-::\-Grafo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGrafo_ab810bbe26a98e9af6661ccddff66b03b}
+Sobrecarga del constructor del grafo 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGrafo_af35326ac9f80c6ca763a1c3b0ef15b60}{\index{Grafo@{Grafo}!alimentar@{alimentar}}
+\index{alimentar@{alimentar}!Grafo@{Grafo}}
+\subsubsection[{alimentar}]{\setlength{\rightskip}{0pt plus 5cm}void Grafo\-::alimentar (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ double $>$ \&}]{valores\-Entrada}
+\end{DoxyParamCaption}
+)}}\label{classGrafo_af35326ac9f80c6ca763a1c3b0ef15b60}
+
+\begin{DoxyParams}{Parameters}
+{\em valores\-Entrada} & Esta función se encarga de introducir los datos de entrada al grafo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGrafo_af2bc519db98b68230c525db3331c1c66}{\index{Grafo@{Grafo}!entrenar@{entrenar}}
+\index{entrenar@{entrenar}!Grafo@{Grafo}}
+\subsubsection[{entrenar}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Grafo\-::entrenar (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$}]{entradas, }
+\item[{const vector$<$ double $>$ \&}]{valores\-Esperados}
+\end{DoxyParamCaption}
+)}}\label{classGrafo_af2bc519db98b68230c525db3331c1c66}
+
+\begin{DoxyParams}{Parameters}
+{\em entradas} & \\
+\hline
+{\em valores\-Esperados} & Esta función recibe como entrada las entradas del grafo y los valores esperados del mismo, posteriormente entrena el grafo con estos parámetros y finalmente retorna un contador con el número de ediciones del grafo que tuvo que hacer para que se de la salida esperada, se hacen máximo 100 ediciones y si no se logra se procede con el siguiente caso de prueba. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGrafo_a985b9195224b1d3d9132d55c5db08cb9}{\index{Grafo@{Grafo}!get\-Resultados@{get\-Resultados}}
+\index{get\-Resultados@{get\-Resultados}!Grafo@{Grafo}}
+\subsubsection[{get\-Resultados}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ Grafo\-::get\-Resultados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGrafo_a985b9195224b1d3d9132d55c5db08cb9}
+\begin{DoxyReturn}{Returns}
+Función que obtiene los resultados pero los almacena en un vector de doubles. 
+\end{DoxyReturn}
+\hypertarget{classGrafo_a158dbc3b6695be5e34f5e82ad7670632}{\index{Grafo@{Grafo}!obtener\-Resultados@{obtener\-Resultados}}
+\index{obtener\-Resultados@{obtener\-Resultados}!Grafo@{Grafo}}
+\subsubsection[{obtener\-Resultados}]{\setlength{\rightskip}{0pt plus 5cm}void Grafo\-::obtener\-Resultados (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$ \&}]{valores\-Resultado}
+\end{DoxyParamCaption}
+) const}}\label{classGrafo_a158dbc3b6695be5e34f5e82ad7670632}
+
+\begin{DoxyParams}{Parameters}
+{\em valores\-Resultado} & Esta función recibe como parámetro una dirección en la cual guardará los valores resultado de la capa de salida del grafo \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/Grafo.\-h\item 
+src/Grafo.\-cpp\end{DoxyCompactItemize}
