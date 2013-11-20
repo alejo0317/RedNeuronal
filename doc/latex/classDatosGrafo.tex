@@ -12,11 +12,20 @@ vector$<$ unsigned $>$ \hyperlink{classDatosGrafo_a6756a89c3cd9a4ee55325b1db9936
 \item 
 \hyperlink{classDatosGrafo_a2e74f7e8b29759148dc6dc19472f7040}{Datos\-Grafo} (string file\-\_\-grafo)
 \item 
-vector$<$ Columna $>$ \hyperlink{classDatosGrafo_a8ec119ef64e4011c77052c19c5a16652}{get\-Descripcion} ()
+vector$<$ \hyperlink{Columna_8h_ab9591322692e52302d24161e6e115994}{Columna} $>$ \hyperlink{classDatosGrafo_a8ec119ef64e4011c77052c19c5a16652}{get\-Descripcion} ()
 \item 
 void \hyperlink{classDatosGrafo_ab3c56e3dcb30286e561018114687e735}{print\-All} ()
 \item 
 vector$<$ double $>$ \hyperlink{classDatosGrafo_ae4bc073ef1368eef726d74575f10de25}{get\-Pesos\-Vertices} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ unsigned $>$ \hyperlink{classDatosGrafo_a059a327bc0f4a29c5125b8159f304d65}{topologia}
+\item 
+vector$<$ \hyperlink{Columna_8h_ab9591322692e52302d24161e6e115994}{Columna} $>$ \hyperlink{classDatosGrafo_a284e7d2cc2af70e04102c82a0d1406be}{descripcion}
+\item 
+vector$<$ double $>$ \hyperlink{classDatosGrafo_ac89ee01ba2e05ec2b9d6c219eb309631}{pesos\-Vertices}
 \end{DoxyCompactItemize}
 
 
@@ -31,9 +40,9 @@ Esta clase almacena los datos de la estructura del grafo.
 \item[{string}]{file\-\_\-grafo}
 \end{DoxyParamCaption}
 )}}\label{classDatosGrafo_a2e74f7e8b29759148dc6dc19472f7040}
-El constructor de esta clase recibe el nombre de un archvo y lo lee para obtener la estructura de la red 
+Crea objeto con información de la estructura del grago 
 \begin{DoxyParams}{Parameters}
-{\em file\-\_\-grafo} & \\
+{\em file\-\_\-grafo} & Nombre del archivo que contiene la estructura del grafo \\
 \hline
 \end{DoxyParams}
 
@@ -41,13 +50,13 @@ El constructor de esta clase recibe el nombre de un archvo y lo lee para obtener
 \subsection{Member Function Documentation}
 \hypertarget{classDatosGrafo_a8ec119ef64e4011c77052c19c5a16652}{\index{Datos\-Grafo@{Datos\-Grafo}!get\-Descripcion@{get\-Descripcion}}
 \index{get\-Descripcion@{get\-Descripcion}!DatosGrafo@{Datos\-Grafo}}
-\subsubsection[{get\-Descripcion}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ Columna $>$ Datos\-Grafo\-::get\-Descripcion (
+\subsubsection[{get\-Descripcion}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Columna} $>$ Datos\-Grafo\-::get\-Descripcion (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDatosGrafo_a8ec119ef64e4011c77052c19c5a16652}
-Retorna los pesos de todas las aristas del grafo que fueron leídas desde el archivo de entrada \begin{DoxyReturn}{Returns}
-
+\begin{DoxyReturn}{Returns}
+Retorna los pesos de todas las aristas del grafo que fueron leídas desde el archivo de entrada 
 \end{DoxyReturn}
 \hypertarget{classDatosGrafo_ae4bc073ef1368eef726d74575f10de25}{\index{Datos\-Grafo@{Datos\-Grafo}!get\-Pesos\-Vertices@{get\-Pesos\-Vertices}}
 \index{get\-Pesos\-Vertices@{get\-Pesos\-Vertices}!DatosGrafo@{Datos\-Grafo}}
@@ -56,8 +65,8 @@ Retorna los pesos de todas las aristas del grafo que fueron leídas desde el arc
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDatosGrafo_ae4bc073ef1368eef726d74575f10de25}
-Obtiene el peso o umbral de los nodos o vertices \begin{DoxyReturn}{Returns}
-
+\begin{DoxyReturn}{Returns}
+Obtiene el peso o umbral de los nodos o vertices 
 \end{DoxyReturn}
 \hypertarget{classDatosGrafo_a6756a89c3cd9a4ee55325b1db9936fa1}{\index{Datos\-Grafo@{Datos\-Grafo}!get\-Topologia@{get\-Topologia}}
 \index{get\-Topologia@{get\-Topologia}!DatosGrafo@{Datos\-Grafo}}
@@ -67,7 +76,7 @@ Obtiene el peso o umbral de los nodos o vertices \begin{DoxyReturn}{Returns}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDatosGrafo_a6756a89c3cd9a4ee55325b1db9936fa1}
 \begin{DoxyReturn}{Returns}
-Función que retorna la topología de la red 
+Vector con la topologia de la red 
 \end{DoxyReturn}
 \hypertarget{classDatosGrafo_ab3c56e3dcb30286e561018114687e735}{\index{Datos\-Grafo@{Datos\-Grafo}!print\-All@{print\-All}}
 \index{print\-All@{print\-All}!DatosGrafo@{Datos\-Grafo}}
@@ -78,7 +87,19 @@ Función que retorna la topología de la red
 )}}\label{classDatosGrafo_ab3c56e3dcb30286e561018114687e735}
 Imprime la información de la estructura del grafo 
 
+\subsection{Member Data Documentation}
+\hypertarget{classDatosGrafo_a284e7d2cc2af70e04102c82a0d1406be}{\index{Datos\-Grafo@{Datos\-Grafo}!descripcion@{descripcion}}
+\index{descripcion@{descripcion}!DatosGrafo@{Datos\-Grafo}}
+\subsubsection[{descripcion}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Columna}$>$ Datos\-Grafo\-::descripcion\hspace{0.3cm}{\ttfamily [private]}}}\label{classDatosGrafo_a284e7d2cc2af70e04102c82a0d1406be}
+\hypertarget{classDatosGrafo_ac89ee01ba2e05ec2b9d6c219eb309631}{\index{Datos\-Grafo@{Datos\-Grafo}!pesos\-Vertices@{pesos\-Vertices}}
+\index{pesos\-Vertices@{pesos\-Vertices}!DatosGrafo@{Datos\-Grafo}}
+\subsubsection[{pesos\-Vertices}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Datos\-Grafo\-::pesos\-Vertices\hspace{0.3cm}{\ttfamily [private]}}}\label{classDatosGrafo_ac89ee01ba2e05ec2b9d6c219eb309631}
+\hypertarget{classDatosGrafo_a059a327bc0f4a29c5125b8159f304d65}{\index{Datos\-Grafo@{Datos\-Grafo}!topologia@{topologia}}
+\index{topologia@{topologia}!DatosGrafo@{Datos\-Grafo}}
+\subsubsection[{topologia}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$unsigned$>$ Datos\-Grafo\-::topologia\hspace{0.3cm}{\ttfamily [private]}}}\label{classDatosGrafo_a059a327bc0f4a29c5125b8159f304d65}
+
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-src/Datos\-Grafo.\-h\item 
-src/Datos\-Grafo.\-cpp\end{DoxyCompactItemize}
+src/\hyperlink{DatosGrafo_8h}{Datos\-Grafo.\-h}\item 
+src/\hyperlink{DatosGrafo_8cpp}{Datos\-Grafo.\-cpp}\end{DoxyCompactItemize}

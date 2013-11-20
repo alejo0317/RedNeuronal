@@ -1,0 +1,88 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=Red neuronal
+
+[WINDOWS]
+main="Red neuronal","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+Arista_8h_source.html
+Capa_8h_source.html
+Columna_8h_source.html
+DatosEntrenamiento_8h_source.html
+DatosGrafo_8h_source.html
+FuncionesUtiles_8h_source.html
+Grafo_8h_source.html
+Nodo_8h_source.html
+Arista_8cpp.html
+Arista_8h.html
+Capa_8h.html
+Columna_8h.html
+DatosEntrenamiento_8cpp.html
+DatosEntrenamiento_8h.html
+DatosGrafo_8cpp.html
+DatosGrafo_8h.html
+FuncionesUtiles_8cpp.html
+FuncionesUtiles_8h.html
+Grafo_8cpp.html
+Grafo_8h.html
+main_8cpp.html
+Nodo_8cpp.html
+Nodo_8h.html
+structArista.html
+structArista-members.html
+classDatosEntrenamiento.html
+classDatosEntrenamiento-members.html
+classDatosGrafo.html
+classDatosGrafo-members.html
+classGrafo.html
+classGrafo-members.html
+classNodo.html
+classNodo-members.html
+dir_68267d1309a1af8e8297ef4c3efbcdba.html
+index.html
+annotated.html
+classes.html
+functions.html
+functions_func.html
+functions_vars.html
+files.html
+globals.html
+globals_func.html
+globals_type.html
+globals_defs.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+ftv2blank.png
+ftv2doc.png
+ftv2folderclosed.png
+ftv2folderopen.png
+ftv2ns.png
+ftv2mo.png
+ftv2cl.png
+ftv2lastnode.png
+ftv2link.png
+ftv2mlastnode.png
+ftv2mnode.png
+ftv2node.png
+ftv2plastnode.png
+ftv2pnode.png
+ftv2vertline.png
+ftv2splitbar.png

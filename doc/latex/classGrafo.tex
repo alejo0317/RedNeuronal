@@ -20,6 +20,13 @@ vector$<$ double $>$ \hyperlink{classGrafo_a985b9195224b1d3d9132d55c5db08cb9}{ge
 \item 
 \hyperlink{classGrafo_ab810bbe26a98e9af6661ccddff66b03b}{Grafo} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{Capa_8h_af7763c80258043d4df4839c4942d819b}{Capa} $>$ \hyperlink{classGrafo_a3bfeff1ebed4dc888fb228ccbe5ac80a}{m\-\_\-capas}
+\item 
+double \hyperlink{classGrafo_a3193bdd51068bca3fafe8ba51631e32e}{error}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -50,9 +57,9 @@ Sobrecarga del constructor del grafo
 \item[{const vector$<$ double $>$ \&}]{valores\-Entrada}
 \end{DoxyParamCaption}
 )}}\label{classGrafo_af35326ac9f80c6ca763a1c3b0ef15b60}
-
+Esta función se encarga de introducir los datos de entrada al grafo, también hace la propagación de los nuevos valores. 
 \begin{DoxyParams}{Parameters}
-{\em valores\-Entrada} & Esta función se encarga de introducir los datos de entrada al grafo. \\
+{\em valores\-Entrada} & Vector con números double de entrada al grafo \\
 \hline
 \end{DoxyParams}
 \hypertarget{classGrafo_af2bc519db98b68230c525db3331c1c66}{\index{Grafo@{Grafo}!entrenar@{entrenar}}
@@ -63,13 +70,16 @@ Sobrecarga del constructor del grafo
 \item[{const vector$<$ double $>$ \&}]{valores\-Esperados}
 \end{DoxyParamCaption}
 )}}\label{classGrafo_af2bc519db98b68230c525db3331c1c66}
-
+Funcion que se encarga del entrenamiento Recibe las entradas del grafo y se encarga de modificar el grafo hasta que se adapte a esos valores 
 \begin{DoxyParams}{Parameters}
-{\em entradas} & \\
+{\em entradas} & Entradas del archivo de entrenamieto \\
 \hline
-{\em valores\-Esperados} & Esta función recibe como entrada las entradas del grafo y los valores esperados del mismo, posteriormente entrena el grafo con estos parámetros y finalmente retorna un contador con el número de ediciones del grafo que tuvo que hacer para que se de la salida esperada, se hacen máximo 100 ediciones y si no se logra se procede con el siguiente caso de prueba. \\
+{\em valores\-Esperados} & Salidas esperadas \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Numero de ediciones que fueron necesarias en la red para esa entrada 
+\end{DoxyReturn}
 \hypertarget{classGrafo_a985b9195224b1d3d9132d55c5db08cb9}{\index{Grafo@{Grafo}!get\-Resultados@{get\-Resultados}}
 \index{get\-Resultados@{get\-Resultados}!Grafo@{Grafo}}
 \subsubsection[{get\-Resultados}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ Grafo\-::get\-Resultados (
@@ -77,8 +87,8 @@ Sobrecarga del constructor del grafo
 {}
 \end{DoxyParamCaption}
 )}}\label{classGrafo_a985b9195224b1d3d9132d55c5db08cb9}
-\begin{DoxyReturn}{Returns}
-Función que obtiene los resultados pero los almacena en un vector de doubles. 
+$\ast$\-Función que obtiene los resultados pero los almacena en un vector de doubles. \begin{DoxyReturn}{Returns}
+Vector con los resultados (doubles) 
 \end{DoxyReturn}
 \hypertarget{classGrafo_a158dbc3b6695be5e34f5e82ad7670632}{\index{Grafo@{Grafo}!obtener\-Resultados@{obtener\-Resultados}}
 \index{obtener\-Resultados@{obtener\-Resultados}!Grafo@{Grafo}}
@@ -87,14 +97,23 @@ Función que obtiene los resultados pero los almacena en un vector de doubles.
 \item[{vector$<$ double $>$ \&}]{valores\-Resultado}
 \end{DoxyParamCaption}
 ) const}}\label{classGrafo_a158dbc3b6695be5e34f5e82ad7670632}
-
+Obtiene los valores de salida de la red 
 \begin{DoxyParams}{Parameters}
-{\em valores\-Resultado} & Esta función recibe como parámetro una dirección en la cual guardará los valores resultado de la capa de salida del grafo \\
+{\em valores\-Resultado} & Una direccion donde almacenar los valores de salida \\
 \hline
 \end{DoxyParams}
 
 
+\subsection{Member Data Documentation}
+\hypertarget{classGrafo_a3193bdd51068bca3fafe8ba51631e32e}{\index{Grafo@{Grafo}!error@{error}}
+\index{error@{error}!Grafo@{Grafo}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}double Grafo\-::error\hspace{0.3cm}{\ttfamily [private]}}}\label{classGrafo_a3193bdd51068bca3fafe8ba51631e32e}
+Variable que almacena el error actual del grafo \hypertarget{classGrafo_a3bfeff1ebed4dc888fb228ccbe5ac80a}{\index{Grafo@{Grafo}!m\-\_\-capas@{m\-\_\-capas}}
+\index{m\-\_\-capas@{m\-\_\-capas}!Grafo@{Grafo}}
+\subsubsection[{m\-\_\-capas}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Capa}$>$ Grafo\-::m\-\_\-capas\hspace{0.3cm}{\ttfamily [private]}}}\label{classGrafo_a3bfeff1ebed4dc888fb228ccbe5ac80a}
+Vector que contiene todas las capas del grafo 
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-src/Grafo.\-h\item 
-src/Grafo.\-cpp\end{DoxyCompactItemize}
+src/\hyperlink{Grafo_8h}{Grafo.\-h}\item 
+src/\hyperlink{Grafo_8cpp}{Grafo.\-cpp}\end{DoxyCompactItemize}

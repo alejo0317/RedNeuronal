@@ -1,6 +1,10 @@
 \hypertarget{classNodo}{\section{Nodo Class Reference}
 \label{classNodo}\index{Nodo@{Nodo}}
 }
+
+
+{\ttfamily \#include $<$Nodo.\-h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -10,15 +14,26 @@ void \hyperlink{classNodo_a68e3ca116114771acd83bc92276f7978}{set\-Valor\-Salida}
 \item 
 double \hyperlink{classNodo_aae7003873d5cdf18f87b530e9eb21c37}{get\-Valor\-Salida} () const 
 \item 
-void \hyperlink{classNodo_a9ee158f56659ac0ec5e079ba6e4423d4}{alimentar} (const Capa \&capa\-Previa)
+void \hyperlink{classNodo_a9ee158f56659ac0ec5e079ba6e4423d4}{alimentar} (const \hyperlink{Capa_8h_af7763c80258043d4df4839c4942d819b}{Capa} \&capa\-Previa)
 \item 
-void \hyperlink{classNodo_a894f810838840e287266559b03d09766}{set\-B} (double b)
+void \hyperlink{classNodo_a894f810838840e287266559b03d09766}{set\-B} (double \hyperlink{classNodo_a3ba0471f16ed34bb96408bebe24f3149}{b})
 \item 
 double \hyperlink{classNodo_afd4affc1fd3789b10e1c52f6c81ff506}{get\-B} ()
 \item 
 vector$<$ \hyperlink{structArista}{Arista} $>$ \hyperlink{classNodo_abdf076e5ad4b680f75d2a5fb73647adb}{get\-Pesos\-Salida} ()
 \item 
 void \hyperlink{classNodo_a504539adc007d73aa98ec3429fde76db}{set\-Peso\-Salida} (unsigned indice, \hyperlink{structArista}{Arista} arista)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classNodo_a64be78936e6cb237eadcf540ac7ca93d}{m\-\_\-valor\-Salida}
+\item 
+vector$<$ \hyperlink{structArista}{Arista} $>$ \hyperlink{classNodo_af2f2e9e9ddebe2e969c76bbce0d3519f}{m\-\_\-\-Pesos\-Salida}
+\item 
+double \hyperlink{classNodo_a3ba0471f16ed34bb96408bebe24f3149}{b}
+\item 
+unsigned \hyperlink{classNodo_a433390fbd12030c7562f1601f3545a41}{m\-\_\-miindice}
 \end{DoxyCompactItemize}
 
 
@@ -33,15 +48,15 @@ void \hyperlink{classNodo_a504539adc007d73aa98ec3429fde76db}{set\-Peso\-Salida} 
 \item[{vector$<$ double $>$}]{pesos\-Aristas}
 \end{DoxyParamCaption}
 )}}\label{classNodo_afb708898b880a4de342315a874c41da8}
-Constructor de la clase nodo recibe como entrada el número de salidas (numero de nodos en la siguiente capa), un parámetro miindice util para hacer identificación de todos los nodos, un parámetro peso que es el umbral para la función hardlim y vector que contiene el peso de las aristas que salen del nodo. 
+Constructor clase nodo 
 \begin{DoxyParams}{Parameters}
-{\em numero\-Salidas} & \\
+{\em numero\-Salidas} & Numero de salidas del nodo, (tamano de la siguiente capa) \\
 \hline
-{\em miindice} & \\
+{\em miindice} & Identificador del nodo \\
 \hline
-{\em peso} & \\
+{\em peso} & Peso o umbral del nodo \\
 \hline
-{\em pesos\-Aristas} & \\
+{\em pesos\-Aristas} & Peso de cada arista que sale del nodo \\
 \hline
 \end{DoxyParams}
 
@@ -51,7 +66,7 @@ Constructor de la clase nodo recibe como entrada el número de salidas (numero d
 \index{alimentar@{alimentar}!Nodo@{Nodo}}
 \subsubsection[{alimentar}]{\setlength{\rightskip}{0pt plus 5cm}void Nodo\-::alimentar (
 \begin{DoxyParamCaption}
-\item[{const Capa \&}]{capa\-Previa}
+\item[{const {\bf Capa} \&}]{capa\-Previa}
 \end{DoxyParamCaption}
 )}}\label{classNodo_a9ee158f56659ac0ec5e079ba6e4423d4}
 Alimenta el nodo a partir de la capa previa 
@@ -125,12 +140,27 @@ Asigna el peso de salida.
 )}}\label{classNodo_a68e3ca116114771acd83bc92276f7978}
 Un set para el valor de salida 
 \begin{DoxyParams}{Parameters}
-{\em valor} & \\
+{\em valor} & valor a asignar \\
 \hline
 \end{DoxyParams}
 
 
+\subsection{Member Data Documentation}
+\hypertarget{classNodo_a3ba0471f16ed34bb96408bebe24f3149}{\index{Nodo@{Nodo}!b@{b}}
+\index{b@{b}!Nodo@{Nodo}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}double Nodo\-::b\hspace{0.3cm}{\ttfamily [private]}}}\label{classNodo_a3ba0471f16ed34bb96408bebe24f3149}
+\hypertarget{classNodo_a433390fbd12030c7562f1601f3545a41}{\index{Nodo@{Nodo}!m\-\_\-miindice@{m\-\_\-miindice}}
+\index{m\-\_\-miindice@{m\-\_\-miindice}!Nodo@{Nodo}}
+\subsubsection[{m\-\_\-miindice}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Nodo\-::m\-\_\-miindice\hspace{0.3cm}{\ttfamily [private]}}}\label{classNodo_a433390fbd12030c7562f1601f3545a41}
+\hypertarget{classNodo_af2f2e9e9ddebe2e969c76bbce0d3519f}{\index{Nodo@{Nodo}!m\-\_\-\-Pesos\-Salida@{m\-\_\-\-Pesos\-Salida}}
+\index{m\-\_\-\-Pesos\-Salida@{m\-\_\-\-Pesos\-Salida}!Nodo@{Nodo}}
+\subsubsection[{m\-\_\-\-Pesos\-Salida}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Arista}$>$ Nodo\-::m\-\_\-\-Pesos\-Salida\hspace{0.3cm}{\ttfamily [private]}}}\label{classNodo_af2f2e9e9ddebe2e969c76bbce0d3519f}
+\hypertarget{classNodo_a64be78936e6cb237eadcf540ac7ca93d}{\index{Nodo@{Nodo}!m\-\_\-valor\-Salida@{m\-\_\-valor\-Salida}}
+\index{m\-\_\-valor\-Salida@{m\-\_\-valor\-Salida}!Nodo@{Nodo}}
+\subsubsection[{m\-\_\-valor\-Salida}]{\setlength{\rightskip}{0pt plus 5cm}double Nodo\-::m\-\_\-valor\-Salida\hspace{0.3cm}{\ttfamily [private]}}}\label{classNodo_a64be78936e6cb237eadcf540ac7ca93d}
+
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-src/Nodo.\-h\item 
-src/Nodo.\-cpp\end{DoxyCompactItemize}
+src/\hyperlink{Nodo_8h}{Nodo.\-h}\item 
+src/\hyperlink{Nodo_8cpp}{Nodo.\-cpp}\end{DoxyCompactItemize}
